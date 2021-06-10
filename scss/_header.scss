@@ -1,8 +1,42 @@
 @use 'colors';
 
+@use 'base';
+
+//logo nápis
 .header__logo {
   height: 30px;
   width: 235px;
   margin: 0 auto;
   display: block;
+}
+
+//menu
+.menu__list {
+  margin: 0;
+  padding: 0;
+}
+
+.menu__item {
+  text-decoration: none;
+  font-family: base.$headline-font;
+  display: inline-block;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: colors.$cervena;
+  font-size: 18px;
+  padding: 20px;
+  display: inline-block;
+}
+
+.menu__link:hover,
+.menu__link:focus,
+.menu__link:active {
+  color: white;
+  background-color: colors.$cervena;
+}
+
+.menu {
+  margin: 30px 0 30px 0;
 }

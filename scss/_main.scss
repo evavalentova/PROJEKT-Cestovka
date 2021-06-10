@@ -1,0 +1,22 @@
+@use 'base';
+
+@use 'colors';
+
+//Stylování zájezdy, obrázky
+
+//Cenovka
+.pictures__price {
+  font-family: base.$headline-font;
+  font-size: 18px;
+  padding: 10px;
+  color: white;
+  background-color: colors.$cervena;
+  display: inline-block;
+}
+
+//Nadpisy
+.pictures__title1 {
+  font-family: base.$headline-font;
+  font-size: 28px;
+  font-weight: 600;
+}
