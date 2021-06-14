@@ -2,7 +2,7 @@
 
 @use 'colors';
 
-//Stylování zájezdy, obrázky
+//Stylování zájezdy, obrázky, ikony, novinky
 
 //Cenovka
 .pictures__price {
@@ -12,11 +12,153 @@
   color: white;
   background-color: colors.$cervena;
   display: inline-block;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  margin: 0;
 }
 
-//Nadpisy
+//Nadpisy H1, H2, H3, H4, H5
 .pictures__title1 {
   font-family: base.$headline-font;
   font-size: 28px;
   font-weight: 600;
+  margin: 0;
+  color: white;
+  position: absolute;
+  left: 20px;
+  bottom: 60px;
+}
+
+h2 {
+  font-family: base.$headline-font;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.pictures__title3 {
+  font-family: base.$headline-font;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  position: absolute;
+  left: 20px;
+  bottom: 25px;
+  margin: 0;
+}
+
+.icons__title4 {
+  font-family: base.$headline-font;
+  font-size: 18px;
+  color: colors.$cervena;
+  margin: 0;
+}
+
+.news__title5 {
+  font-family: base.$headline-font;
+  font-size: 16px;
+  color: colors.$cervena;
+  margin: 10px 0;
+}
+
+//Text na fotkách
+.pictures__text {
+  font-size: 16px;
+  color: white;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  margin: 0;
+}
+
+//Pozicování nadpisy, text na fotkách
+.pictures__position {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.pictures__title1--position {
+  bottom: 80px;
+}
+
+//Obrázky
+.pictures__palms,
+.pictures__boat {
+  height: 240px;
+  object-fit: cover;
+  filter: brightness(80%);
+}
+
+.pictures__lake,
+.pictures__bike,
+.pictures__canyon,
+.pictures__bay {
+  height: 150px;
+  object-fit: cover;
+  filter: brightness(80%);
+}
+
+//Patička
+.footer {
+  font-family: base.$headline-font;
+  background-color: colors.$seda-paticka;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer p {
+  margin: 0;
+}
+
+//Ikony
+.icons__map,
+.icons__plane,
+.icons__globe,
+.icons__shield {
+  height: 40px;
+  flex: 0 0 25%;
+  margin-top: 20px;
+  display: block;
+}
+
+.icons__flexbox {
+  display: flex;
+  align-items: flex-start;
+  background-color: colors.$seda-pozadi;
+  margin-bottom: 10px;
+}
+
+.icons__flexbox div {
+  padding: 20px 20px 20px 0;
+}
+
+.icons__flexbox p {
+  margin-bottom: 0;
+}
+
+.icons {
+  margin: 40px 0;
+}
+
+//Novinky
+.news {
+  margin: 40px 0;
+}
+
+.news__item {
+  background-color: colors.$seda-pozadi;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.news__date {
+  color: colors.$seda-datum;
+  margin: 0;
+  font-family: base.$headline-font;
+}
+
+.news__text {
+  margin: 0;
+  font-family: base.$headline-font;
 }

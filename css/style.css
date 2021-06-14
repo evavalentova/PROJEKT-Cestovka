@@ -63,10 +63,148 @@ body {
   color: white;
   background-color: #f03000;
   display: inline-block;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  margin: 0;
 }
 
 .pictures__title1 {
   font-family: "Montserrat", sans-serif;
   font-size: 28px;
   font-weight: 600;
+  margin: 0;
+  color: white;
+  position: absolute;
+  left: 20px;
+  bottom: 60px;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.pictures__title3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  position: absolute;
+  left: 20px;
+  bottom: 25px;
+  margin: 0;
+}
+
+.icons__title4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  color: #f03000;
+  margin: 0;
+}
+
+.news__title5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #f03000;
+  margin: 10px 0;
+}
+
+.pictures__text {
+  font-size: 16px;
+  color: white;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  margin: 0;
+}
+
+.pictures__position {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.pictures__title1--position {
+  bottom: 80px;
+}
+
+.pictures__palms,
+.pictures__boat {
+  height: 240px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: brightness(80%);
+}
+
+.pictures__lake,
+.pictures__bike,
+.pictures__canyon,
+.pictures__bay {
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: brightness(80%);
+}
+
+.footer {
+  font-family: "Montserrat", sans-serif;
+  background-color: #444444;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.icons__map,
+.icons__plane,
+.icons__globe,
+.icons__shield {
+  height: 40px;
+  flex: 0 0 25%;
+  margin-top: 20px;
+  display: block;
+}
+
+.icons__flexbox {
+  display: flex;
+  align-items: flex-start;
+  background-color: #f0f0f0;
+  margin-bottom: 10px;
+}
+
+.icons__flexbox div {
+  padding: 20px 20px 20px 0;
+}
+
+.icons__flexbox p {
+  margin-bottom: 0;
+}
+
+.icons {
+  margin: 40px 0;
+}
+
+.news {
+  margin: 40px 0;
+}
+
+.news__item {
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.news__date {
+  color: #888888;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.news__text {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
 }/*# sourceMappingURL=style.css.map */
