@@ -8,6 +8,10 @@
   width: 235px;
   margin: 0 auto;
   display: block;
+
+  @media screen and (min-width: 768px) {
+    margin: 36px 0 58px 20px;
+  }
 }
 
 //menu
@@ -31,12 +35,24 @@
 }
 
 .menu__link:hover,
-.menu__link:focus,
-.menu__link:active {
+.menu__link:focus {
   color: white;
   background-color: colors.$cervena;
 }
 
 .menu {
   margin: 30px 0 30px 0;
+
+  @media screen and (min-width: 768px) {
+    margin: 20px 0 40px 0;
+  }
+}
+
+//Specifika pro tablet a PC
+
+.header {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
