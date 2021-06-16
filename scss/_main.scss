@@ -40,6 +40,12 @@ h2 {
   font-weight: 600;
 }
 
+.title2__news {
+  @media screen and (min-width: 768px) {
+    margin-top: 40px;
+  }
+}
+
 .pictures__title3 {
   font-family: base.$headline-font;
   font-size: 20px;
@@ -171,15 +177,30 @@ h2 {
   margin: 40px 0;
 }
 
-//Novinky
+//Novinky, i grid pro PC
 .news {
   margin: 40px 0;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
+
+  @media screen and (min-width: 960px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+  }
 }
 
 .news__item {
   background-color: colors.$seda-pozadi;
   padding: 20px;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 960px) {
+    margin-bottom: 0;
+  }
 }
 
 .news__date {
@@ -193,12 +214,19 @@ h2 {
   font-family: base.$headline-font;
 }
 
-//Grid obrázky-zájezdy tablet
+//Grid obrázky-zájezdy tablet, PC
 .pictures {
   @media screen and (min-width: 768px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 180px 180px 180px;
+    gap: 20px;
+  }
+
+  @media screen and (min-width: 960px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 180px 180px;
     gap: 20px;
   }
 }
@@ -211,12 +239,34 @@ h2 {
   }
 }
 
-//Grid ikony pro tablet
+//Grid palma a loď pro PC
+.pictures__grid-palms {
+  @media screen and (min-width: 960px) {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+  }
+}
+
+.pictures__grid-boat {
+  @media screen and (min-width: 960px) {
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+  }
+}
+
+//Grid ikony pro tablet, PC
 .icons {
   @media screen and (min-width: 768px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 188px 188px;
+    gap: 20px;
+  }
+
+  @media screen and (min-width: 960px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     gap: 20px;
   }
 }

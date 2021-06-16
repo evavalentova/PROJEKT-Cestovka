@@ -23,4 +23,8 @@ body {
   padding: 30px 20px 40px 20px;
   font-family: $default-font;
   font-size: 16px;
+
+  @media screen and (min-width: 960px) {
+    padding: 30px 120px 40px 120px;
+  }
 }
